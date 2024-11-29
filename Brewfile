@@ -18,6 +18,7 @@ brew "gh"
 brew "lazygit"
 brew "neovim"
 brew "nvm"
+brew "go"
 brew "ollama"
 brew "tmux"
 
