@@ -1,0 +1,58 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  // "logo": {
+  //   "source": "~/.config/fastfetch/logo.png",
+  //   "padding": {
+  //     "top": 1,
+  //   },
+  //   // "width": 32,
+  //   // "height": 16,
+  // },
+  "modules": [
+    "break",
+    {
+      "type": "custom",
+      "format": "ArchSliver",
+      "outputColor": "red",
+    },
+    "break",
+    "separator",
+    "break",
+    {
+      "type": "os",
+      "key": " ",
+    },
+    {
+      "type": "memory",
+      "key": " ",
+    },
+    {
+      "type": "kernel",
+      "key": " ",
+    },
+    {
+      "type": "packages",
+      "key": " ",
+    },
+    {
+      "type": "wm",
+      "key": " ",
+    },
+    {
+      "type": "terminal",
+      "key": " ",
+    },
+    {
+      "type": "custom",
+      "format": "github.com/joaoinez",
+      "outputColor": "white",
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m",
+    },
+    "break",
+    "separator",
+  ],
+}

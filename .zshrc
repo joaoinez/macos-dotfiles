@@ -1,0 +1,165 @@
+
+# ███████╗░██████╗██╗░░██╗██████╗░░█████╗░
+# ╚════██║██╔════╝██║░░██║██╔══██╗██╔══██╗
+# ░░███╔═╝╚█████╗░███████║██████╔╝██║░░╚═╝
+# ██╔══╝░░░╚═══██╗██╔══██║██╔══██╗██║░░██╗
+# ███████╗██████╔╝██║░░██║██║░░██║╚█████╔╝
+# ╚══════╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░
+#----------------------------------------------
+
+# █░█ ▄▀█ █▀█ █ ▄▀█ █▄▄ █░░ █▀▀ █▀
+# ▀▄▀ █▀█ █▀▄ █ █▀█ █▄█ █▄▄ ██▄ ▄█
+export MYSCRIPTS="$HOME/.local/bin"
+export MYVIMRC="$HOME/.config/nvim"
+export EDITOR="nvim"
+export MANPAGER="nvim +Man!"
+export BAT_THEME="Catppuccin Mocha"
+
+# ▀█ █ █▄░█ █ ▀█▀
+# █▄ █ █░▀█ █ ░█░
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+
+source "${ZINIT_HOME}/zinit.zsh"
+
+# █▀█ █░░ █░█ █▀▀ █ █▄░█ █▀
+# █▀▀ █▄▄ █▄█ █▄█ █ █░▀█ ▄█
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+# █▀ █▄░█ █ █▀█ █▀█ █▀▀ ▀█▀ █▀
+# ▄█ █░▀█ █ █▀▀ █▀▀ ██▄ ░█░ ▄█
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::command-not-found
+
+# █▀▀ █▀█ █▀▄▀█ █▀█ █░░ █▀▀ ▀█▀ █ █▀█ █▄░█
+# █▄▄ █▄█ █░▀░█ █▀▀ █▄▄ ██▄ ░█░ █ █▄█ █░▀█
+autoload -Uz compinit && compinit
+
+zinit cdreplay -q
+
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
+# █▄▀ █▀▀ █▄█ █▄▄ █ █▄░█ █▀▄ █ █▄░█ █▀▀ █▀
+# █░█ ██▄ ░█░ █▄█ █ █░▀█ █▄▀ █ █░▀█ █▄█ ▄█
+bindkey -v
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+bindkey '^[w' kill-region
+
+# █░█ █ █▀ ▀█▀ █▀█ █▀█ █▄█
+# █▀█ █ ▄█ ░█░ █▄█ █▀▄ ░█░
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
+# ▄▀█ █░░ █ ▄▀█ █▀ █▀▀ █▀
+# █▀█ █▄▄ █ █▀█ ▄█ ██▄ ▄█
+# Clear everything
+alias cclear="clear && printf '\e[3J'"
+
+# Filesystem
+alias ls='ls --color'
+alias ll="eza -lah --git --icons=always"
+alias tree="eza -T -L=2"
+alias cat="bat"
+
+# Neovim
+alias vim='nvim'
+
+# Zinit
+alias zstatus='zinit zstatus'
+
+# Chezmoi
+alias .cd="chezmoi cd ~"
+alias .apply="chezmoi apply"
+alias .init="chezmoi init"
+alias .update="chezmoi update"
+alias .add="chezmoi add"
+alias .readd="chezmoi re-add"
+alias .edit="chezmoi edit --apply"
+alias .vim="chezmoi edit --apply"
+alias .merge="chezmoi merge"
+alias .diff="chezmoi diff"
+alias .managed="chezmoi managed"
+alias .verify="chezmoi verify"
+alias .push="sh ~/.local/bin/push_dotfiles.sh"
+
+# Source .zshrc
+alias sourcez="source ~/.zshrc"
+
+# Fastfetch
+alias neofetch="fastfetch"
+
+# █▀▀ █░█ ▄▀█ █░░
+# ██▄ ▀▄▀ █▀█ █▄▄
+eval "$(starship init zsh)"
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
+# █▀▀ ▀█ █▀▀
+# █▀░ █▄ █▀░
+
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
+--color=selected-bg:#45475a \
+--multi"
+
+zstyle ':fzf-tab:*' fzf-flags $(echo $FZF_DEFAULT_OPTS)
+
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+
+_fzf_compgen_path() {
+  fd --hidden --exclude .git . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type=d --hidden --exclude .git . "$1"
+}
+
+_fzf_comprun() {
+  local command=$1
+  shift
+
+  case "$command" in
+    cd)           fzf --preview 'eza --tree --color=always {} | head -200' "$@" ;;
+    export|unset) fzf --preview "eval 'echo $'{}"         "$@" ;;
+    ssh)          fzf --preview 'dig {}'                   "$@" ;;
+    *)            fzf --preview "bat -n --color=always --line-range :500 {}" "$@" ;;
+  esac
+}
+
+source ~/.local/bin/fzf-git.sh/fzf-git.sh
+
+# █▄░█ █░█ █▀▄▀█
+# █░▀█ ▀▄▀ █░▀░█
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
