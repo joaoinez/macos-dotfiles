@@ -23,6 +23,7 @@ brew "tmux"
 
 # Apps
 cask "bruno"
+cask "discord"
 cask "docker"
 cask "figma"
 # cask "zen-browser"
