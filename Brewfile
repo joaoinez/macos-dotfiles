@@ -6,11 +6,12 @@ brew "gnu-sed"
 brew "fzf"
 brew "fd"
 brew "fastfetch"
-brew "lf"
+brew "yazi"
 brew "tealdeer"
 brew "ripgrep"
 brew "starship"
 brew "zoxide"
+brew "stow"
 
 # Dev
 brew "docker-compose"
