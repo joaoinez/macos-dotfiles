@@ -42,3 +42,4 @@ cask "font-hack-nerd-font"
 cask "sf-symbols"
 
 mas "Amphetamine", id: 937984704
+mas "Bitwarden", id: 1352778147
