@@ -11,6 +11,7 @@ brew "tealdeer"
 brew "ripgrep"
 brew "starship"
 brew "zoxide"
+brew "imagemagick"
 brew "stow"
 
 # Dev
