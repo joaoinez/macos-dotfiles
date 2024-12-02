@@ -84,6 +84,7 @@ alias cat="bat"
 
 # Neovim
 alias vim='nvim'
+alias lazyvim='NVIM_APPNAME="lazyvim" nvim'
 
 # Zinit
 alias zstatus='zinit zstatus'
