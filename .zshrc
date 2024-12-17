@@ -14,7 +14,6 @@ export MYVIMRC="$HOME/.config/nvim"
 export EDITOR="nvim"
 export MANPAGER="nvim +Man!"
 export BAT_THEME="Catppuccin Mocha"
-export OLLAMA_API_KEY="ollama"
 
 # ▀█ █ █▄░█ █ ▀█▀
 # █▄ █ █░▀█ █ ░█░
