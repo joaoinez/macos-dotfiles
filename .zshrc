@@ -14,6 +14,7 @@ export MYVIMRC="$HOME/.config/nvim"
 export EDITOR="nvim"
 export MANPAGER="nvim +Man!"
 export BAT_THEME="Catppuccin Mocha"
+export OLLAMA_API_KEY="ollama"
 
 # ▀█ █ █▄░█ █ ▀█▀
 # █▄ █ █░▀█ █ ░█░
@@ -85,6 +86,7 @@ alias cat="bat"
 # Neovim
 alias vim='nvim'
 alias lazyvim='NVIM_APPNAME="lazyvim" nvim'
+alias kickstart='NVIM_APPNAME="kickstart.nvim" nvim'
 
 # Zinit
 alias zstatus='zinit zstatus'

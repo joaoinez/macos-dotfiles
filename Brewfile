@@ -13,16 +13,21 @@ brew "starship"
 brew "zoxide"
 brew "imagemagick"
 brew "stow"
+brew "wordgrinder"
+brew "micro"
 
 # Dev
 brew "docker-compose"
 brew "gh"
+brew "hub"
 brew "lazygit"
 brew "neovim"
+brew "helix"
 brew "nvm"
 brew "go"
-brew "ollama"
+brew "luarocks"
 brew "tmux"
+brew "ollama"
 
 # Apps
 cask "bruno"
@@ -44,4 +49,3 @@ cask "font-hack-nerd-font"
 cask "sf-symbols"
 
 mas "Amphetamine", id: 937984704
-mas "Bitwarden", id: 1352778147
