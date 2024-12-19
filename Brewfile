@@ -15,6 +15,8 @@ brew "imagemagick"
 brew "stow"
 brew "wordgrinder"
 brew "micro"
+brew "delta"
+brew "chafa"
 
 # Dev
 brew "docker-compose"
