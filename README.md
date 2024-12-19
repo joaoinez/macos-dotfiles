@@ -59,16 +59,29 @@ https://macos-defaults.com/
 git --version
 ```
 
-Install homebrew
+### Install homebrew
 
 ```shell
 brew install mas
 brew bundle
 ```
 
+### Sync folder with `~`
+
+#### To link `dotfiles` with `~`
 ```shell
-cp .zshrc ~/.zshrc
-cp .gitconfig ~/.gitconfig
-cp -r .config/* ~/.config
-cp -r .local/bin/* ~/.local/bin
+stow .
 ```
+
+#### After a change in `dotfiles`
+
+```shell
+stow --restow .
+```
+
+#### After a change in `~`
+
+```shell
+stow --restow --adopt .
+```
+

@@ -1,4 +1,3 @@
-
 # ███████╗░██████╗██╗░░██╗██████╗░░█████╗░
 # ╚════██║██╔════╝██║░░██║██╔══██╗██╔══██╗
 # ░░███╔═╝╚█████╗░███████║██████╔╝██║░░╚═╝
@@ -85,7 +84,6 @@ alias cat="bat"
 # Neovim
 alias vim='nvim'
 alias lazyvim='NVIM_APPNAME="lazyvim" nvim'
-alias kickstart='NVIM_APPNAME="kickstart.nvim" nvim'
 
 # Zinit
 alias zstatus='zinit zstatus'
