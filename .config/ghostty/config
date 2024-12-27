@@ -1,0 +1,8 @@
+theme = catppuccin-mocha
+
+cursor-color = ff0017
+
+font-family = "Hack Nerd Font Mono"
+
+background-opacity = 0.82
+background-blur-radius = 10

@@ -1,3 +1,6 @@
+# Taps
+tap "bloznelis/tap"
+
 # Utilities
 brew "bat"
 brew "btop"
@@ -18,6 +21,8 @@ brew "wordgrinder"
 brew "micro"
 brew "delta"
 brew "chafa"
+brew "inetutils"
+brew "typioca"
 
 # Dev
 brew "docker-compose"
@@ -40,11 +45,13 @@ cask "figma"
 cask "zen-browser"
 cask "google-chrome"
 cask "kitty"
+cask "ghostty"
 cask "maccy"
 cask "rectangle"
 cask "spotify"
 cask "steam"
 cask "whatsapp"
+cask "cyberduck"
 
 # Fonts
 cask "font-hack"
