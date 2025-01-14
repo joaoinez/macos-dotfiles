@@ -14,6 +14,7 @@ export EDITOR="nvim"
 export MANPAGER="nvim +Man!"
 export BAT_THEME="Catppuccin Mocha"
 export PATH="$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
+export OLLAMA_API_KEY=ollama
 
 # ▀█ █ █▄░█ █ ▀█▀
 # █▄ █ █░▀█ █ ░█░

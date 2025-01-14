@@ -1,5 +1,6 @@
 # Taps
 tap "bloznelis/tap"
+tap "ggozad/formulas"
 
 # Utilities
 brew "bat"
@@ -36,6 +37,9 @@ brew "go"
 brew "luarocks"
 brew "tmux"
 brew "ollama"
+brew "ggozad/formulas/oterm"
+brew "aider"
+brew "watchman"
 
 # Apps
 cask "bruno"
