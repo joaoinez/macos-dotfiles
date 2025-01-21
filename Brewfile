@@ -56,6 +56,7 @@ cask "spotify"
 cask "steam"
 cask "whatsapp"
 cask "cyberduck"
+cask "mockoon"
 
 # Fonts
 cask "font-hack"
