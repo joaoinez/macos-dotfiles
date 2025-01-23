@@ -57,6 +57,7 @@ cask "steam"
 cask "whatsapp"
 cask "cyberduck"
 cask "mockoon"
+cask "visual-studio-code"
 
 # Fonts
 cask "font-hack"
