@@ -18,7 +18,7 @@
 # Main model:
 
 ## Specify the model to use for the main chat
-model: ollama_chat/deepseek-coder-v2:16b
+model: ollama_chat/deepseek-r1:14b
 ## Use claude-3-opus-20240229 model for the main chat
 #opus: false
 
@@ -99,8 +99,7 @@ model: ollama_chat/deepseek-coder-v2:16b
 #list-models: xxx
 
 ## Specify a file with aider model settings for unknown models
-#model-settings-file: .aider.model.settings.yml
-
+model-settings-file: .aider.model.settings.yml
 ## Specify a file with context window and costs for unknown models
 #model-metadata-file: .aider.model.metadata.json
 
@@ -128,8 +127,7 @@ model: ollama_chat/deepseek-coder-v2:16b
 #weak-model: xxx
 
 ## Specify the model to use for editor tasks (default depends on --model)
-#editor-model: xxx
-
+editor-model: ollama_chat/deepseek-coder-v2:16b
 ## Specify the edit format for the editor model (default: depends on editor model)
 #editor-edit-format: xxx
 
