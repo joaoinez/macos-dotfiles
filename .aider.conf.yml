@@ -10,9 +10,6 @@ weak-model: ollama_chat/llama3.1:8b
 ## Specify a file with aider model settings for unknown models
 model-settings-file: .aider.model.settings.yml
 
-## Use architect edit format for the main chat
-architect: true
-
 ## Use colors suitable for a dark terminal background (default: False)
 dark-mode: true
 
