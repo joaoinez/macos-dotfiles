@@ -1,11 +1,17 @@
 ## Specify the model to use for the main chat
-model: ollama_chat/qwen2.5-coder:14b
+model: ollama_chat/deepseek-r1:14b
+
+## Specify the model to use for editor tasks (default depends on --model)
+editor-model: ollama_chat/qwen2.5-coder:14b
+
+## Specify the model to use for commit messages and chat history summarization (default depends on --model)
+weak-model: ollama_chat/llama3.1:8b
 
 ## Specify a file with aider model settings for unknown models
 model-settings-file: .aider.model.settings.yml
 
-## Specify the model to use for commit messages and chat history summarization (default depends on --model)
-weak-model: ollama_chat/llama3.1:8b
+## Use architect edit format for the main chat
+architect: true
 
 ## Use colors suitable for a dark terminal background (default: False)
 dark-mode: true
