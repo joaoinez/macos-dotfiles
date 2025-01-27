@@ -1,8 +1,9 @@
 ## Specify the model to use for the main chat
-model: ollama_chat/deepseek-r1:14b
+# model: ollama_chat/deepseek-r1:14b
+model: ollama_chat/deepseek-coder-v2:16b
 
 ## Specify the model to use for editor tasks (default depends on --model)
-editor-model: ollama_chat/qwen2.5-coder:14b
+# editor-model: ollama_chat/qwen2.5-coder:14b
 
 ## Specify the model to use for commit messages and chat history summarization (default depends on --model)
 weak-model: ollama_chat/llama3.1:8b
