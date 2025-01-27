@@ -14,7 +14,7 @@ model-settings-file: .aider.model.settings.yml
 dark-mode: true
 
 ## Set the markdown code theme (default: default, other options include monokai, solarized-dark, solarized-light, or a Pygments builtin style, see https://pygments.org/styles for available themes)
-code-theme: material
+code-theme: default
 
 ## Enable/disable automatic linting after changes (default: True)
 auto-lint: false
