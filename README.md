@@ -1,4 +1,4 @@
-https://macos-defaults.com/
+<https://macos-defaults.com/>
 
 ```text
 █▀▄▀█ ▄▀█ █▀▀ █▀█ █▀
@@ -33,7 +33,7 @@ https://macos-defaults.com/
 
 ---
 
-##### `Displays` 
+##### `Displays`
 
 #### Set display resolution to `More space`
 
@@ -45,11 +45,13 @@ https://macos-defaults.com/
 
 #### Set `Delay until repeat` to one tick before `Short`
 
+#### Add `Unicode Text Input` keyboard layout
+
 ---
 
 ##### `Trackpad`
 
-####  `More Gestures` -> Set `App Exposé` to `Swipe Down with Three Fingers`
+#### `More Gestures` -> Set `App Exposé` to `Swipe Down with Three Fingers`
 
 ---
 
@@ -69,6 +71,7 @@ brew bundle
 ### Sync folder with `~`
 
 #### To link `dotfiles` with `~`
+
 ```shell
 stow .
 ```
@@ -84,4 +87,3 @@ stow --restow .
 ```shell
 stow --restow --adopt .
 ```
-
