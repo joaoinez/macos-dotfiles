@@ -1,15 +1,11 @@
 [[manager.prepend_keymap]]
 on   = "T"
-run  = "plugin --sync max-preview"
-# For upcoming Yazi 0.4 (nightly version):
-# run  = "plugin max-preview"
+run  = "plugin max-preview"
 desc = "Maximize or restore preview"
 
 [[manager.prepend_keymap]]
 on   = "l"
-run  = "plugin --sync smart-enter"
-# For upcoming Yazi 0.4 (nightly version):
-# run  = "plugin smart-enter"
+run  = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
 
 [[manager.prepend_keymap]]
@@ -39,8 +35,8 @@ desc = "Empty the trash"
 
 [[manager.prepend_keymap]]
 on  = "k"
-run = "plugin --sync arrow --args=-1"
+run = "plugin arrow --args=-1"
 
 [[manager.prepend_keymap]]
 on  = "j"
-run = "plugin --sync arrow --args=1"
+run = "plugin arrow --args=1"
