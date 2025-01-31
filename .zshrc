@@ -91,23 +91,8 @@ alias lazyvim='NVIM_APPNAME="lazyvim" nvim'
 # Zinit
 alias zstatus='zinit zstatus'
 
-# Chezmoi
-alias .cd="chezmoi cd ~"
-alias .apply="chezmoi apply"
-alias .init="chezmoi init"
-alias .update="chezmoi update"
-alias .add="chezmoi add"
-alias .readd="chezmoi re-add"
-alias .edit="chezmoi edit --apply"
-alias .vim="chezmoi edit --apply"
-alias .merge="chezmoi merge"
-alias .diff="chezmoi diff"
-alias .managed="chezmoi managed"
-alias .verify="chezmoi verify"
-alias .push="sh ~/.local/bin/push_dotfiles.sh"
-
 # Source .zshrc
-alias sourcez="source ~/.zshrc"
+alias source-zsh="source ~/.zshrc"
 
 # Fastfetch
 alias neofetch="fastfetch"
@@ -121,6 +106,10 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# Open WebUI
+# alias open-webui="DATA_DIR=~/.open-webui uvx --python 3.11 open-webui@latest serve"
+alias open-webui="docker run -d -p 8087:8080 -e WEBUI_AUTH=False -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main"
 
 # █▀▀ █░█ ▄▀█ █░░
 # ██▄ ▀▄▀ █▀█ █▄▄

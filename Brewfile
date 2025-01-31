@@ -1,6 +1,5 @@
 # Taps
 tap "bloznelis/tap"
-tap "ggozad/formulas"
 
 # Utilities
 brew "bat"
@@ -24,20 +23,22 @@ brew "delta"
 brew "chafa"
 brew "inetutils"
 brew "typioca"
+brew "ffmpeg"
 
 # Dev
 brew "docker-compose"
 brew "gh"
 brew "hub"
 brew "lazygit"
+brew "lazydocker"
 brew "neovim"
 brew "helix"
 brew "nvm"
+brew "uv"
 brew "go"
 brew "luarocks"
 brew "tmux"
 brew "ollama"
-brew "ggozad/formulas/oterm"
 brew "aider"
 brew "watchman"
 cask "mockoon"
@@ -60,6 +61,7 @@ cask "steam"
 cask "whatsapp"
 cask "cyberduck"
 cask "slack"
+cask "raycast"
 
 # Fonts
 cask "font-hack"

@@ -73,7 +73,7 @@ brew bundle
 #### To link `dotfiles` with `~`
 
 ```shell
-stow .
+stow --no-folding .
 ```
 
 #### After a change in `dotfiles`
