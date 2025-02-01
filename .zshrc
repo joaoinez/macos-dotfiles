@@ -111,6 +111,12 @@ function y() {
 # alias open-webui="DATA_DIR=~/.open-webui uvx --python 3.11 open-webui@latest serve"
 alias open-webui="docker run -d -p 8087:8080 -e WEBUI_AUTH=False -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main"
 
+# git
+alias gfp="git fetch && git pull"
+
+# create 8k ctx models
+alias create-8k-models="~/.local/bin/create-8k-models.sh"
+
 # █▀▀ █░█ ▄▀█ █░░
 # ██▄ ▀▄▀ █▀█ █▄▄
 eval "$(starship init zsh)"
