@@ -66,6 +66,7 @@ cask "whatsapp"
 cask "cyberduck"
 cask "slack"
 cask "raycast"
+cask "google-drive"
 
 # Fonts
 cask "font-hack"
