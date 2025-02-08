@@ -64,6 +64,7 @@ cask "cyberduck"
 cask "slack"
 cask "raycast"
 cask "google-drive"
+cask "macpass"
 
 # Fonts
 cask "font-hack"
