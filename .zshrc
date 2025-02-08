@@ -37,7 +37,6 @@ zinit light zsh-users/zsh-autosuggestions
 # ▄█ █░▀█ █ █▀▀ █▀▀ ██▄ ░█░ ▄█
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-zinit snippet OMZP::archlinux
 zinit snippet OMZP::command-not-found
 
 # █▀▀ █▀█ █▀▄▀█ █▀█ █░░ █▀▀ ▀█▀ █ █▀█ █▄░█
@@ -85,6 +84,7 @@ alias cat="bat"
 # Neovim
 alias vim='nvim'
 alias lazyvim='NVIM_APPNAME="lazyvim" nvim'
+alias neovim='nvim --clean'
 
 # Zinit
 alias zstatus='zinit zstatus'
@@ -105,10 +105,6 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-# Open WebUI
-# alias open-webui="DATA_DIR=~/.open-webui uvx --python 3.11 open-webui@latest serve"
-alias open-webui="docker run -d -p 8087:8080 -e WEBUI_AUTH=False -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main"
-
 # git
 alias gfp="git fetch && git pull"
 
@@ -123,6 +119,7 @@ alias parrot="curl parrot.live"
 eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # █▀▀ ▀█ █▀▀
 # █▀░ █▄ █▀░
@@ -165,12 +162,3 @@ _fzf_comprun() {
 }
 
 source ~/.local/bin/fzf-git.sh
-
-# █▄░█ █░█ █▀▄▀█
-# █░▀█ ▀▄▀ █░▀░█
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/joaoinez/.lmstudio/bin"
