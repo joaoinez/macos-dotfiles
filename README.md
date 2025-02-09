@@ -87,3 +87,9 @@ stow --restow .
 ```shell
 stow --restow --adopt .
 ```
+
+### Rebuild `bat` cache
+
+```shell
+bat cache --build
+```
