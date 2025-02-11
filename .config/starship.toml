@@ -36,9 +36,10 @@ conflicted = "[ ](red)"
 staged = "[ ](green)"
 deleted = "[ ](yellow)"
 renamed = "[ ](yellow)"
-modified = "[ ](yellow)"
+modified = "[≡ ](yellow)"
 typechanged = "[ ](yellow)"
 untracked = "[ ](yellow)"
+stashed = "[󰜦 ](rosewater)"
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
