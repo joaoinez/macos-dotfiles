@@ -1,6 +1,3 @@
-# Taps
-tap "bloznelis/tap"
-
 # Utilities
 brew "bat"
 brew "btop"
@@ -17,12 +14,9 @@ brew "starship"
 brew "zoxide"
 brew "imagemagick"
 brew "stow"
-brew "wordgrinder"
-brew "micro"
 brew "delta"
 brew "chafa"
 brew "inetutils"
-brew "typioca"
 brew "ffmpeg"
 brew "ollama"
 
@@ -45,7 +39,6 @@ brew "act"
 cask "mockoon"
 cask "visual-studio-code"
 cask "zed"
-cask "kitty"
 cask "ghostty"
 cask "bruno"
 cask "orbstack"
@@ -55,14 +48,16 @@ cask "legcord"
 cask "figma"
 cask "zen-browser"
 cask "google-chrome"
-cask "maccy"
-cask "rectangle"
+# cask "maccy"
+# cask "rectangle"
 cask "spotify"
 cask "steam"
 cask "whatsapp"
-cask "cyberduck"
+# cask "cyberduck"
 cask "slack"
 cask "raycast"
+# cask "leader-key"
+# cask "karabiner-elements"
 cask "google-drive"
 cask "macpass"
 
@@ -71,5 +66,5 @@ cask "font-hack"
 cask "font-hack-nerd-font"
 cask "sf-symbols"
 
-# Store
-mas "Amphetamine", id: 937984704
+# # Store
+# mas "Amphetamine", id: 937984704
