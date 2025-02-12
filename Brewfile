@@ -1,3 +1,6 @@
+# Taps
+# tap "jstkdng/programs"
+
 # Utilities
 brew "bat"
 brew "btop"
@@ -19,13 +22,15 @@ brew "chafa"
 brew "inetutils"
 brew "ffmpeg"
 brew "ollama"
+brew "sevenzip"
+# brew "jstkdng/programs/ueberzugpp"
 
 # Dev
 brew "gh"
 brew "hub"
 brew "lazygit"
 brew "lazydocker"
-brew "neovim"
+brew "neovim", args: ['HEAD']
 brew "helix"
 brew "fnm"
 brew "uv"
