@@ -26,6 +26,7 @@ brew "gh"
 brew "hub"
 brew "lazygit"
 brew "lazydocker"
+brew "tree-sitter", args: ['HEAD']
 brew "neovim", args: ['HEAD']
 brew "helix"
 brew "fnm"
