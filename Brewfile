@@ -1,6 +1,3 @@
-# Taps
-# tap "jstkdng/programs"
-
 # Utilities
 brew "bat"
 brew "btop"
@@ -23,7 +20,6 @@ brew "inetutils"
 brew "ffmpeg"
 brew "ollama"
 brew "sevenzip"
-# brew "jstkdng/programs/ueberzugpp"
 
 # Dev
 brew "gh"
@@ -50,7 +46,7 @@ cask "orbstack"
 
 # Apps
 cask "legcord"
-cask "figma"
+# cask "figma"
 cask "zen-browser"
 cask "google-chrome"
 # cask "maccy"
@@ -58,11 +54,10 @@ cask "google-chrome"
 cask "spotify"
 cask "steam"
 cask "whatsapp"
-# cask "cyberduck"
+cask "cyberduck"
 cask "slack"
 cask "raycast"
 # cask "leader-key"
-# cask "karabiner-elements"
 cask "google-drive"
 cask "macpass"
 
