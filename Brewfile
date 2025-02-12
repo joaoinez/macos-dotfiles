@@ -47,25 +47,21 @@ cask "orbstack"
 
 # Apps
 cask "legcord"
-# cask "figma"
 cask "zen-browser"
 cask "google-chrome"
-# cask "maccy"
-# cask "rectangle"
 cask "spotify"
 cask "steam"
 cask "whatsapp"
 cask "cyberduck"
 cask "slack"
 cask "raycast"
-# cask "leader-key"
 cask "google-drive"
 cask "macpass"
+cask "linear-linear"
+cask "tailscale"
+cask "protonvpn"
 
 # Fonts
 cask "font-hack"
 cask "font-hack-nerd-font"
 cask "sf-symbols"
-
-# # Store
-# mas "Amphetamine", id: 937984704

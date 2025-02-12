@@ -5,6 +5,8 @@
 █░▀░█ █▀█ █▄▄ █▄█ ▄█
 ```
 
+<https://www.raycast.com/wallpapers>
+
 ### Settings
 
 ##### `Apple ID`
