@@ -93,3 +93,9 @@ stow --restow --adopt .
 ```shell
 bat cache --build
 ```
+
+### Install `yazi` packages
+
+```shell
+ya pack -i
+```
