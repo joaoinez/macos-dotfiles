@@ -24,3 +24,4 @@ models
 ^/LICENSE.*
 ^/COPYING
 ^/Brewfile
+\.DS_Store
