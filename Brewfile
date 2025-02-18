@@ -1,3 +1,6 @@
+# Taps
+tap "oven-sh/bun"
+
 # Utilities
 brew "bat"
 brew "btop"
@@ -30,6 +33,7 @@ brew "tree-sitter", args: ['HEAD']
 brew "neovim", args: ['HEAD']
 brew "helix"
 brew "fnm"
+brew "oven-sh/bun/bun"
 brew "uv"
 brew "go"
 brew "luarocks"
