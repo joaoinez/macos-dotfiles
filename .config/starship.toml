@@ -6,6 +6,7 @@ $git_status\
 $git_state\
 $nodejs\
 $lua\
+$python\
 $golang\
 \n$character"""
 
@@ -50,6 +51,10 @@ symbol = '󰎙 '
 
 [lua]
 symbol = '󰢱 '
+
+[python]
+symbol = '󰌠 '
+style = "green bold"
 
 [golang]
 symbol = '󰟓 '

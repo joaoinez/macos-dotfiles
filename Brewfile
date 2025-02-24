@@ -48,6 +48,7 @@ cask "zed"
 cask "ghostty"
 cask "bruno"
 cask "orbstack"
+brew "vercel-cli"
 
 # Apps
 cask "legcord"
