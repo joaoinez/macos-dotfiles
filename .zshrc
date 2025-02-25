@@ -77,7 +77,7 @@ alias cclear="clear && printf '\e[3J'"
 alias ls='ls --color'
 alias ll="eza -lah --git --icons=always"
 alias tree="eza -T -L=2"
-alias cat="bat"
+alias cat="bat --paging=never"
 
 # Neovim
 alias vim='~/.local/bin/restartable-nvim.sh'
