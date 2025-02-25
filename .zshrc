@@ -9,7 +9,7 @@
 # █░█ ▄▀█ █▀█ █ ▄▀█ █▄▄ █░░ █▀▀ █▀
 # ▀▄▀ █▀█ █▀▄ █ █▀█ █▄█ █▄▄ ██▄ ▄█
 export MYSCRIPTS="$HOME/.local/bin"
-export MYVIMRC="$HOME/.config/nvim"
+export MYVIMRC="$HOME/.config/nvim/init.lua"
 export BAT_THEME="Catppuccin Mocha"
 
 # ▀█ █ █▄░█ █ ▀█▀
@@ -80,7 +80,7 @@ alias tree="eza -T -L=2"
 alias cat="bat"
 
 # Neovim
-alias vim='nvim'
+alias vim='~/.local/bin/restartable-nvim.sh'
 alias lazyvim='NVIM_APPNAME="lazyvim" nvim'
 alias neovim='nvim --clean'
 
