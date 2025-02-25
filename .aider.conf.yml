@@ -1,15 +1,14 @@
 ## Specify the model to use for the main chat
-# model: ollama_chat/deepseek-r1:8b-8k
-model: ollama_chat/qwen2.5-coder:7b-8k
+model: anthropic/claude-3-7-sonnet-20250219
 
 ## Specify the model to use for editor tasks (default depends on --model)
-# editor-model: ollama_chat/qwen2.5-coder:7b-8k
+# editor-model: anthropic/claude-3-7-sonnet-20250219
 
 ## Specify the model to use for commit messages and chat history summarization (default depends on --model)
-weak-model: ollama_chat/llama3.2:latest-8k
+weak-model: groq/llama-3.3-70b-versatile
 
 ## Specify a file with aider model settings for unknown models
-# model-settings-file: .aider.model.settings.yml
+model-settings-file: .aider.model.settings.yml
 
 ## Use colors suitable for a dark terminal background (default: False)
 dark-mode: true

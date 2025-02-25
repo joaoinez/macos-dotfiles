@@ -106,9 +106,6 @@ function y() {
 # git
 alias gfp="git fetch && git pull"
 
-# create 8k ctx models
-alias create-8k-models="~/.local/bin/create-8k-models.sh"
-
 # parrot
 alias parrot="curl parrot.live"
 
