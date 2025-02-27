@@ -22,6 +22,7 @@ brew "chafa"
 brew "inetutils"
 brew "ffmpeg"
 brew "ollama"
+brew "tgpt"
 brew "sevenzip"
 
 # Dev

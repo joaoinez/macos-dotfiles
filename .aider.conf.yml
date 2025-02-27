@@ -1,8 +1,9 @@
 ## Specify the model to use for the main chat
-model: anthropic/claude-3-7-sonnet-20250219
+model: openrouter/deepseek/deepseek-r1
+# model: anthropic/claude-3-7-sonnet-20250219
 
 ## Specify the model to use for editor tasks (default depends on --model)
-# editor-model: anthropic/claude-3-7-sonnet-20250219
+editor-model: openrouter/anthropic/claude-3.7-sonnet
 
 ## Specify the model to use for commit messages and chat history summarization (default depends on --model)
 weak-model: groq/llama-3.3-70b-versatile
@@ -11,10 +12,10 @@ weak-model: groq/llama-3.3-70b-versatile
 model-settings-file: .aider.model.settings.yml
 
 ## Use colors suitable for a dark terminal background (default: False)
-dark-mode: true
+# dark-mode: true
 
 ## Set the markdown code theme (default: default, other options include monokai, solarized-dark, solarized-light, or a Pygments builtin style, see https://pygments.org/styles for available themes)
-code-theme: default
+code-theme: github-dark
 
 ## Enable/disable automatic linting after changes (default: True)
 auto-lint: false
