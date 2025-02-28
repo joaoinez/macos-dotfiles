@@ -5,20 +5,11 @@ model: openrouter/deepseek/deepseek-r1
 ## Specify the model to use for editor tasks (default depends on --model)
 editor-model: openrouter/anthropic/claude-3.7-sonnet
 
-## Specify the model to use for commit messages and chat history summarization (default depends on --model)
-# weak-model: groq/llama-3.3-70b-versatile
-
 ## Specify a file with aider model settings for unknown models
 model-settings-file: .aider.model.settings.yml
 
-## Use colors suitable for a dark terminal background (default: False)
-# dark-mode: true
-
 ## Set the markdown code theme (default: default, other options include monokai, solarized-dark, solarized-light, or a Pygments builtin style, see https://pygments.org/styles for available themes)
 code-theme: github-dark
-
-## Enable/disable automatic linting after changes (default: True)
-auto-lint: false
 
 ## Enable/disable auto commit of LLM changes (default: True)
 auto-commits: false
