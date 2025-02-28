@@ -6,7 +6,7 @@ model: openrouter/deepseek/deepseek-r1
 editor-model: openrouter/anthropic/claude-3.7-sonnet
 
 ## Specify the model to use for commit messages and chat history summarization (default depends on --model)
-weak-model: groq/llama-3.3-70b-versatile
+# weak-model: groq/llama-3.3-70b-versatile
 
 ## Specify a file with aider model settings for unknown models
 model-settings-file: .aider.model.settings.yml

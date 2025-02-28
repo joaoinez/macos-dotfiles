@@ -24,6 +24,7 @@ brew "ffmpeg"
 brew "ollama"
 brew "tgpt"
 brew "sevenzip"
+brew "tectonic"
 
 # Dev
 brew "gh"
