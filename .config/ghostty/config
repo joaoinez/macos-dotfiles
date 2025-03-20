@@ -3,7 +3,9 @@ theme = catppuccin-mocha
 
 cursor-color = ff0017
 
-font-family = "Hack Nerd Font Mono"
+# font-family = "Hack Nerd Font Mono"
+font-family = "RobotoMono Nerd Font Mono"
+# font-family = "losevka Nerd Font Mono"
 font-feature = -liga
 font-thicken = true
 

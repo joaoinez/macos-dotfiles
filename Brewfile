@@ -2,6 +2,7 @@
 tap "oven-sh/bun"
 
 # Utilities
+brew "rustup"
 brew "bat"
 brew "btop"
 brew "eza"
@@ -25,6 +26,7 @@ brew "ollama"
 brew "aichat"
 brew "sevenzip"
 brew "tectonic"
+brew "rename"
 
 # Dev
 brew "gh"
@@ -40,7 +42,6 @@ brew "uv"
 brew "go"
 brew "luarocks"
 brew "tmux"
-brew "aider"
 brew "watchman"
 brew "posting"
 brew "act"
@@ -73,4 +74,9 @@ cask "protonvpn"
 # Fonts
 cask "font-hack"
 cask "font-hack-nerd-font"
+cask "font-roboto"
+cask "font-roboto-mono"
+cask "font-roboto-mono-nerd-font"
+cask "font-iosevka"
+cask "font-iosevka-nerd-font"
 cask "sf-symbols"

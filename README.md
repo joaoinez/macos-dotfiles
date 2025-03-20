@@ -101,3 +101,10 @@ bat cache --build
 ```shell
 ya pack -i
 ```
+
+### Install `rustup` nightly toolchain
+
+```shell
+rustup-init
+rustup toolchain install nightly
+```
