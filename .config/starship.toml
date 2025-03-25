@@ -47,7 +47,8 @@ typechanged = "[ ](yellow)"
 untracked = "[ ](yellow)"
 
 [nodejs]
-symbol = '󰎙 '
+symbol = ' '
+style = 'yellow bold'
 
 [lua]
 symbol = '󰢱 '
