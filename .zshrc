@@ -11,6 +11,9 @@
 export MYSCRIPTS="$HOME/.local/bin"
 export MYVIMRC="$HOME/.config/nvim/init.lua"
 export BAT_THEME="Catppuccin Mocha"
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # ▀█ █ █▄░█ █ ▀█▀
 # █▄ █ █░▀█ █ ░█░

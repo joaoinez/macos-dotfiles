@@ -54,6 +54,8 @@ cask "kitty"
 cask "bruno"
 cask "orbstack"
 brew "vercel-cli"
+brew "openjdk"
+cask "android-studio"
 
 # Apps
 cask "legcord"
