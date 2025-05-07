@@ -22,3 +22,4 @@
 	features = catppuccin-mocha
 [merge]
 	conflictstyle = zdiff3
+	tool = nvimdiff

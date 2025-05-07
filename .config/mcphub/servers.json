@@ -1,0 +1,18 @@
+{
+  "nativeMCPServers": {
+    "neovim": {
+      "disabled_tools": [
+        "replace_in_file"
+      ]
+    }
+  },
+  "mcpServers": {
+    "context7": {
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "command": "npx"
+    }
+  }
+}
