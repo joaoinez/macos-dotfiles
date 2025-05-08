@@ -3,9 +3,18 @@ theme = catppuccin-mocha
 
 cursor-color = ff0017
 
+# [[ Goofy Fonts ]]
+# font-family = "DepartureMono Nerd Font Mono"
+# font-family = "OpenDyslexicM Nerd Font Mono"
+
+# Narrow fonts -> wide fonts
+font-family = "losevkaTerm Nerd Font Mono"
+# font-family = "VictorMono Nerd Font Mono"
+# font-family = "JetBrainsMono Nerd Font Mono"
+# font-family = "RobotoMono Nerd Font Mono"
 # font-family = "Hack Nerd Font Mono"
-font-family = "RobotoMono Nerd Font Mono"
-# font-family = "losevka Nerd Font Mono"
+# font-family = "FiraCode Nerd Font Mono"
+
 font-feature = -liga
 font-thicken = true
 
