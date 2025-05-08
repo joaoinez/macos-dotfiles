@@ -4,19 +4,20 @@ theme = catppuccin-mocha
 cursor-color = ff0017
 
 # [[ Goofy Fonts ]]
-# font-family = "DepartureMono Nerd Font Mono"
+# font-family = "DepartureMono Nerd Font"
 # font-family = "OpenDyslexicM Nerd Font Mono"
 
-# Narrow fonts -> wide fonts
-font-family = "losevkaTerm Nerd Font Mono"
+# [[ Actual Fonts ]]
+font-family = "Iosevka Nerd Font Mono"
 # font-family = "VictorMono Nerd Font Mono"
 # font-family = "JetBrainsMono Nerd Font Mono"
-# font-family = "RobotoMono Nerd Font Mono"
+# font-family = "RobotoMono Nerd Font"
 # font-family = "Hack Nerd Font Mono"
 # font-family = "FiraCode Nerd Font Mono"
 
 font-feature = -liga
-font-thicken = true
+font-size = 15
+# font-thicken = true
 
 copy-on-select = clipboard
 mouse-hide-while-typing = true
