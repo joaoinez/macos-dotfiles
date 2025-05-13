@@ -1,57 +1,56 @@
-title = Ghostty 👻
-theme = catppuccin-mocha
+title =                      Ghostty 👻
+theme =                      catppuccin-mocha
 
-cursor-color = ff0017
+cursor-color =               ff0017
 
-# [[ Goofy Fonts ]]
-# font-family = "DepartureMono Nerd Font"
-# font-family = "OpenDyslexicM Nerd Font Mono"
+# font-family =                "Hack"
+# font-family =                "Fira Code"
+# font-family =                "Victor Mono"
+font-family =                "Iosevka Term"
+# font-family =                "JetBrains Mono"
+# font-family =                "Departure Mono"
+# font-family =                "Aporetic Sans Mono"
 
-# [[ Actual Fonts ]]
-font-family = "Iosevka Nerd Font Mono"
-# font-family = "VictorMono Nerd Font Mono"
-# font-family = "JetBrainsMono Nerd Font Mono"
-# font-family = "RobotoMono Nerd Font"
-# font-family = "Hack Nerd Font Mono"
-# font-family = "FiraCode Nerd Font Mono"
+font-size =                  14
+font-feature =               -liga
+font-thicken =               true
 
-font-feature = -liga
-font-size = 15
-# font-thicken = true
+copy-on-select =             clipboard
+mouse-hide-while-typing =    true
 
-copy-on-select = clipboard
-mouse-hide-while-typing = true
+window-save-state =          always
+window-vsync =               true
+window-colorspace =          display-p3
 
-window-save-state = always
-window-vsync = true
-window-colorspace = display-p3
-
-background-opacity = 0.82
-background-blur-radius = 10
+background-opacity =         0.82
+background-blur-radius =     10
 
 shell-integration-features = no-cursor,sudo,no-title
 
-macos-option-as-alt = true
-macos-titlebar-style = tabs
+macos-option-as-alt =        true
+macos-titlebar-style =       tabs
 
-keybind = cmd+r=reload_config
+keybind =                    cmd+r=reload_config
 
-keybind = alt+h=unbind
-keybind = alt+j=unbind
-keybind = alt+k=unbind
-keybind = alt+l=unbind
-keybind = alt+space=unbind
+keybind =                    alt+h=unbind
+keybind =                    alt+j=unbind
+keybind =                    alt+k=unbind
+keybind =                    alt+l=unbind
+keybind =                    alt+space=unbind
 
-keybind = cmd+shift+l=next_tab
-keybind = cmd+shift+h=previous_tab
+keybind =                    cmd+shift+l=next_tab
+keybind =                    cmd+shift+h=previous_tab
 
-keybind = cmd+shift+\=new_split:right
-keybind = cmd+\=new_split:down
-keybind = cmd+j=goto_split:bottom
-keybind = cmd+k=goto_split:top
-keybind = cmd+h=goto_split:left
-keybind = cmd+l=goto_split:right
-keybind = cmd+z=toggle_split_zoom
-keybind = cmd+e=equalize_splits
+keybind =                    cmd+shift+\=new_split:right
+keybind =                    cmd+\=new_split:down
+keybind =                    cmd+j=goto_split:bottom
+keybind =                    cmd+k=goto_split:top
+keybind =                    cmd+h=goto_split:left
+keybind =                    cmd+l=goto_split:right
+keybind =                    cmd+z=toggle_split_zoom
+keybind =                    cmd+e=equalize_splits
 
-keybind = cmd+w=close_surface
+keybind =                    cmd+w=close_surface
+
+# NOTE: from https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-Points
+font-codepoint-map = U+e5fa-U+e6b7,U+e700-U+e8ef,U+ed00-U+f2ff,U+e200-U+e2a9,U+f0001-U+f1af0,U+e300-U+e3e3,U+f400-U+f533,U+2665,U+26A1,U+e0a0-U+e0a2,U+e0b0-U+e0b3,U+e0a3,U+e0b4-U+e0c8,U+e0ca,U+e0cc-U+e0d7,U+23fb-U+23fe,U+2b58,U+f300-U+f381,U+e000-U+e00a,U+ea60-U+ec1e,U+276c-U+2771,U+2500-U+259f,U+ee00-U+ee0b = RobotoMono Nerd Font Mono
