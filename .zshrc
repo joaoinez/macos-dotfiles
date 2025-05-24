@@ -84,8 +84,7 @@ alias tree="eza -T -L=2"
 alias cat="bat --paging=never"
 
 # Neovim
-alias vim='~/.local/bin/restartable-nvim.sh'
-alias lazyvim='NVIM_APPNAME="lazyvim" nvim'
+alias vim='~/.local/bin/slivers-nvim.sh'
 alias neovim='nvim --clean'
 
 # Zinit
