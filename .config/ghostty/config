@@ -3,17 +3,13 @@ theme =                      catppuccin-mocha
 
 cursor-color =               ff0017
 
-# font-family =                "Hack"
-# font-family =                "Fira Code"
-# font-family =                "Victor Mono"
 font-family =                "Iosevka Term"
-# font-family =                "JetBrains Mono"
-# font-family =                "Departure Mono"
-# font-family =                "Aporetic Sans Mono"
-
 font-size =                  14
-font-feature =               -liga
-font-thicken =               true
+
+# font-feature =               -liga
+# font-feature =               -calt
+# font-feature =               +JSPT
+# font-thicken =               true
 
 copy-on-select =             clipboard
 mouse-hide-while-typing =    true
