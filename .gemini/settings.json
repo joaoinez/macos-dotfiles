@@ -1,0 +1,20 @@
+{
+  "theme": "Default",
+  "selectedAuthType": "gemini-api-key",
+  "fileFiltering": {
+    "respectGitIgnore": true
+  },
+  "telemetry": {
+    "enabled": false,
+    "logPrompts": false
+  },
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    }
+  }
+}
