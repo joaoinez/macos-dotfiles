@@ -112,6 +112,9 @@ alias gfp="git fetch && git pull"
 # parrot
 alias parrot="curl parrot.live"
 
+# act
+alias act="act --container-architecture linux/amd64"
+
 # █▀▀ █░█ ▄▀█ █░░
 # ██▄ ▀▄▀ █▀█ █▄▄
 eval "$(starship init zsh)"
