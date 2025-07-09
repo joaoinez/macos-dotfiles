@@ -1,30 +1,30 @@
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = "T"
 run  = "plugin max-preview"
 desc = "Maximize or restore preview"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = "l"
 run  = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on  = "y"
 run = [ '''
 	shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list' --confirm
 ''', "yank" ]
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = ["e", "t"]
 run  = '''
 	shell 'gio trash --empty' --confirm
 '''
 desc = "Empty the trash"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on  = "k"
 run = "plugin arrow -1"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on  = "j"
 run = "plugin arrow 1"
