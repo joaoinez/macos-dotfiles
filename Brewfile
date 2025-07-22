@@ -1,5 +1,6 @@
 # Taps
 tap "oven-sh/bun"
+tap "sst/tap"
 
 # Utilities
 brew "rustup"
@@ -23,11 +24,12 @@ brew "chafa"
 brew "inetutils"
 brew "ffmpeg"
 brew "ollama"
-# brew "aichat"
+brew "sst/tap/opencode"
 brew "sevenzip"
 brew "tectonic"
 brew "rename"
 brew "wget"
+cask "claude-code"
 
 # Dev
 brew "gh"
@@ -46,6 +48,9 @@ brew "tmux"
 brew "watchman"
 brew "posting"
 brew "act"
+brew "vercel-cli"
+brew "openjdk"
+brew "gemini-cli"
 cask "mockoon"
 cask "visual-studio-code"
 cask "trae"
@@ -54,10 +59,7 @@ cask "ghostty"
 cask "kitty"
 cask "bruno"
 cask "orbstack"
-brew "vercel-cli"
-brew "openjdk"
 cask "android-studio"
-brew "gemini-cli"
 
 # Apps
 cask "legcord"
