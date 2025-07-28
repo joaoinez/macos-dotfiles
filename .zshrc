@@ -58,6 +58,10 @@ bindkey '^[[B' history-search-forward
 bindkey '^[w' kill-region
 # bindkey '	' autosuggest-accept
 
+# <Ctrl-x><Ctrl-e> to edit command-line in EDITOR
+autoload -Uz edit-command-line && zle -N edit-command-line && \
+  bindkey '^x^e' edit-command-line
+
 # █░█ █ █▀ ▀█▀ █▀█ █▀█ █▄█
 # █▀█ █ ▄█ ░█░ █▄█ █▀▄ ░█░
 HISTSIZE=5000
