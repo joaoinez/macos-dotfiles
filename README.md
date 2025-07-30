@@ -99,7 +99,7 @@ bat cache --build
 ### Install `yazi` packages
 
 ```shell
-ya pack -i
+ya pkg -i
 ```
 
 ### Install `rustup` nightly toolchain
