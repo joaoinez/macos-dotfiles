@@ -99,7 +99,7 @@ bat cache --build
 ### Install `yazi` packages
 
 ```shell
-ya pkg -i
+ya pkg install
 ```
 
 ### Install `rustup` nightly toolchain
@@ -107,4 +107,8 @@ ya pkg -i
 ```shell
 rustup-init
 rustup toolchain install nightly
+```
+
+```shell
+claude config set -g autoUpdates false
 ```

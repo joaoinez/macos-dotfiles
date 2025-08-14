@@ -2,6 +2,7 @@ format = """
 $os\
 $directory\
 $git_branch\
+$git_commit\
 $git_status\
 $git_state\
 $nodejs\
@@ -28,8 +29,12 @@ style = "mauve"
 truncation_length = 1
 
 [git_branch]
-format = "[ $branch ]($style)"
+format = "[$branch ]($style)"
 style = "peach"
+
+[git_commit]
+style = "flamingo bold"
+format = '[\[$hash$tag\]]($style) '
 
 [git_status]
 format = "$ahead_behind$stashed$conflicted$staged$deleted$renamed$modified$typechanged$untracked"
