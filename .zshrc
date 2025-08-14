@@ -14,6 +14,7 @@ export EDITOR="nvim"
 export MANPAGER="nvim +Man!"
 export BAT_THEME="Catppuccin Mocha"
 export ANDROID_HOME=$HOME/Library/Android/sdk
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
