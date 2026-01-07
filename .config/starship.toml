@@ -6,6 +6,7 @@ $git_commit\
 $git_status\
 $git_state\
 $nodejs\
+$bun\
 $lua\
 $python\
 $golang\
@@ -54,6 +55,10 @@ untracked = "[ ](yellow)"
 [nodejs]
 symbol = ' '
 style = 'yellow bold'
+
+[bun]
+symbol = ' '
+style = 'rosewater bold'
 
 [lua]
 symbol = '󰢱 '

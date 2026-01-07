@@ -15,8 +15,6 @@ _darcs
 \.gitignore
 \.gitmodules
 
-models
-
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files
 
@@ -25,3 +23,5 @@ models
 ^/COPYING
 ^/Brewfile
 \.DS_Store
+
+\discord-themes

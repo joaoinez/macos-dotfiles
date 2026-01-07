@@ -18,6 +18,12 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="$PATH:/Users/joaoinez/.dotnet/tools"
+# export PATH=$PATH:$HOME/.local/bin
+export LIQUIBASE_HOME="$HOMEBREW_PREFIX/opt/liquibase/libexec"
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # ▀█ █ █▄░█ █ ▀█▀
 # █▄ █ █░▀█ █ ░█░
@@ -94,11 +100,14 @@ alias cat="bat --paging=never"
 alias vim='~/.local/bin/slivers-nvim.sh'
 alias neovim='nvim --clean'
 
+# JetBrains
+alias rider='~/.local/bin/rider.sh'
+
 # Zinit
 alias zstatus='zinit zstatus'
 
 # Source .zshrc
-alias source-zsh="source ~/.zshrc && source ~/.zshenv"
+alias source-zsh="source ~/.zshrc && source ~/.zshenv && source ~/.zprofile"
 
 # Fastfetch
 alias neofetch="fastfetch"
@@ -137,6 +146,9 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
 --color=selected-bg:#45475a \
 --multi"
+
+bindkey '^F' fzf-file-widget
+bindkey -r '^T'
 
 zstyle ':fzf-tab:*' fzf-flags $(echo $FZF_DEFAULT_OPTS)
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'

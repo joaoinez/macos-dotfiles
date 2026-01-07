@@ -1,0 +1,34 @@
+let mapleader = " "
+
+set scrolloff=10
+
+nmap <leader>ff <Action>(GotoFile)
+nmap <leader>fg <Action>(TextSearchAction)
+nmap <leader>ft <Action>(ActivateProjectToolWindow)
+
+nmap <leader>/ <Action>(CommentByLineComment)
+vmap <leader>/ <Action>(CommentByLineComment)
+
+nmap <leader>tt <Action>(ActivateTerminalToolWindow)
+
+nmap <leader>ww <Action>(CloseContent)
+nmap <leader>wn <Action>(NextTab)
+nmap <leader>wp <Action>(PreviousTab)
+
+nmap <leader>s <Action>(SaveAll)
+
+nmap gd <Action>(GotoDeclaration)
+nmap gr <Action>(FindUsages)
+nmap gt <Action>(GotoTypeDeclaration)
+nmap K <Action>(ShowHoverInfo)
+
+nmap <leader>ca <Action>(ShowIntentionActions)
+nmap <leader>qi <Action>(ShowErrorDescription)
+
+nmap [d <Action>(GotoPreviousError)
+nmap ]d <Action>(GotoNextError)
+nmap [c <Action>(VcsShowPrevChangeMarker)
+nmap ]c <Action>(VcsShowNextChangeMarker)
+
+nnoremap 0 ^
+nnoremap ^ 0
