@@ -109,6 +109,8 @@ rustup-init
 rustup toolchain install nightly
 ```
 
-```shell
-claude config set -g autoUpdates false
+### Install OpenCode
+
+```bash
+curl -fsSL https://opencode.ai/install | bash
 ```

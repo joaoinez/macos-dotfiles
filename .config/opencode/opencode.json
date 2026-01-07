@@ -1,50 +1,82 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "theme": "system",
-  "model": "openrouter/qwen/qwen3-coder",
+  "username": "Joao",
+  "theme": "tokyonight",
+  "model": "github-copilot/claude-opus",
+  "small_model": "github-copilot/claude-haiku",
   "permission": {
     "edit": "allow",
-    "bash": "ask",
+    "bash": {
+      "*": "ask",
+      "ls": "allow",
+      "pwd": "allow",
+      "git status": "allow",
+      "git diff": "allow",
+      "git diff *": "allow",
+      "git log": "allow",
+      "git log *": "allow",
+      "git branch --show-current": "allow",
+      "git branch -r *": "allow",
+      "git branch -vv": "allow",
+      "git rev-parse *": "allow",
+      "git show *": "allow",
+      "grep *": "allow",
+      "head *": "allow",
+      "tail *": "allow"
+    },
     "webfetch": "ask"
+  },
+  "tools": {
+    "tavily_*": false
+  },
+  "agent": {
+    "general": {
+      "model": "github-copilot/claude-haiku"
+    },
+    "explore": {
+      "model": "github-copilot/claude-haiku"
+    },
+    "plan": {
+      "tools": {
+        "tavily_*": true
+      }
+    },
+    "ask": {
+      "mode": "primary",
+      "color": "#FF0017",
+      "tools": {
+        "*": false,
+        "read": true,
+        "webfetch": true,
+        "grep": true,
+        "glob": true,
+        "list": true,
+        "context7_*": true,
+        "tavily_*": true
+      }
+    }
   },
   "instructions": [
     "CONTRIBUTING.md",
+    "CONVENTIONS.md",
+    "README.md",
     "docs/guidelines.md",
     ".cursor/rules/*.md",
-    "CONVENTIONS.md"
+    ".config/opencode/instructions/*.md"
   ],
   "keybinds": {
     "leader": "ctrl+space",
-    "app_help": "<leader>h",
-    "switch_mode": "tab",
-    "editor_open": "<leader>e",
-    "session_new": "<leader>n",
-    "session_list": "<leader>l",
-    "session_share": "<leader>s",
-    "session_unshare": "<leader>u",
-    "session_interrupt": "esc",
-    "session_compact": "<leader>c",
-    "tool_details": "<leader>d",
-    "model_list": "<leader>m",
-    "theme_list": "<leader>t",
-    "project_init": "<leader>i",
-    "input_clear": "ctrl+c",
-    "input_paste": "ctrl+v",
-    "input_submit": "enter",
-    "input_newline": "shift+enter,ctrl+j",
-    "messages_page_up": "pgup",
-    "messages_page_down": "pgdown",
-    "messages_half_page_up": "ctrl+alt+u",
-    "messages_half_page_down": "ctrl+alt+d",
-    "messages_first": "ctrl+g",
-    "messages_last": "ctrl+alt+g",
-    "messages_copy": "<leader>y",
-    "app_exit": "ctrl+c,<leader>q"
+    "input_newline": "ctrl+n"
   },
   "mcp": {
     "context7": {
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
+      "enabled": true
+    },
+    "tavily": {
+      "type": "remote",
+      "url": "https://mcp.tavily.com/mcp/?tavilyApiKey={env:TAVILY_API_KEY}",
       "enabled": true
     }
   }
