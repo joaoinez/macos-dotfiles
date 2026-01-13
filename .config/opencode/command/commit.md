@@ -1,6 +1,6 @@
 ---
 description: git commit and push
-model: github-copilot/claude-haiku
+model: github-copilot/gemini-3-flash-preview
 subtask: true
 ---
 

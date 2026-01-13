@@ -112,5 +112,5 @@ rustup toolchain install nightly
 ### Install OpenCode
 
 ```bash
-curl -fsSL https://opencode.ai/install | bash
+curl -fsSL https://opencode.ai/install | bash -s -- --no-modify-path
 ```

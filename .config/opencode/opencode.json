@@ -2,13 +2,14 @@
   "$schema": "https://opencode.ai/config.json",
   "username": "Joao",
   "theme": "tokyonight",
-  "model": "github-copilot/claude-opus",
-  "small_model": "github-copilot/claude-haiku",
+  "model": "github-copilot/claude-opus-4.5",
+  "small_model": "github-copilot/claude-haiku-4.5",
   "permission": {
     "edit": "allow",
     "bash": {
       "*": "ask",
       "ls": "allow",
+      "ls *": "allow",
       "pwd": "allow",
       "git status": "allow",
       "git diff": "allow",
@@ -22,7 +23,9 @@
       "git show *": "allow",
       "grep *": "allow",
       "head *": "allow",
-      "tail *": "allow"
+      "tail *": "allow",
+      "opencode --version": "allow",
+      "gh api repos/anomalyco/opencode/releases --jq *": "allow"
     },
     "webfetch": "ask"
   },
@@ -31,10 +34,10 @@
   },
   "agent": {
     "general": {
-      "model": "github-copilot/claude-haiku"
+      "model": "github-copilot/claude-haiku-4.5"
     },
     "explore": {
-      "model": "github-copilot/claude-haiku"
+      "model": "github-copilot/claude-haiku-4.5"
     },
     "plan": {
       "tools": {
@@ -65,8 +68,10 @@
     ".config/opencode/instructions/*.md"
   ],
   "keybinds": {
+    "command_list": "<leader>p",
     "leader": "ctrl+space",
-    "input_newline": "ctrl+n"
+    "input_newline": "ctrl+n",
+    "variant_cycle": "<leader>v"
   },
   "mcp": {
     "context7": {

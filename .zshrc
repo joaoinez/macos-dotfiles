@@ -20,6 +20,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 export PATH="$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="$PATH:/Users/joaoinez/.dotnet/tools"
+export PATH=/Users/joaoinez/.opencode/bin:$PATH
 # export PATH=$PATH:$HOME/.local/bin
 export LIQUIBASE_HOME="$HOMEBREW_PREFIX/opt/liquibase/libexec"
 export HOMEBREW_NO_ANALYTICS=1
@@ -130,6 +131,9 @@ alias parrot="curl parrot.live"
 
 # act
 alias act="act --container-architecture linux/amd64"
+
+# models.dev (github-copilot)
+alias models="curl https://models.dev/api.json | jq '.[\"github-copilot\"].models[].id'"
 
 # █▀▀ █░█ ▄▀█ █░░
 # ██▄ ▀▄▀ █▀█ █▄▄

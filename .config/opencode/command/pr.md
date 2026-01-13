@@ -1,6 +1,6 @@
 ---
 description: create a pull request to a target branch
-model: github-copilot/claude-sonnet
+model: github-copilot/claude-sonnet-4.5
 ---
 
 Create a pull request from the current branch to the target branch.
