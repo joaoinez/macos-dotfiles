@@ -1,8 +1,7 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "username": "Joao",
-  "theme": "tokyonight",
-  "model": "github-copilot/claude-opus-4.5",
+  "model": "github-copilot/claude-sonnet-4.6",
   "small_model": "github-copilot/claude-haiku-4.5",
   "permission": {
     "edit": "allow",
@@ -11,7 +10,13 @@
       "ls": "allow",
       "ls *": "allow",
       "pwd": "allow",
-      "git status": "allow",
+      "grep *": "allow",
+      "find *": "allow",
+      "head *": "allow",
+      "tail *": "allow",
+      "tree *": "allow",
+      "git fetch *": "allow",
+      "git status *": "allow",
       "git diff": "allow",
       "git diff *": "allow",
       "git log": "allow",
@@ -20,14 +25,18 @@
       "git branch -r *": "allow",
       "git branch -vv": "allow",
       "git rev-parse *": "allow",
+      "git rev-list *": "allow",
       "git show *": "allow",
-      "grep *": "allow",
-      "head *": "allow",
-      "tail *": "allow",
+      "git rev-list --left-right --count": "allow",
+      "gh api repos/anomalyco/opencode/releases --jq *": "allow",
       "opencode --version": "allow",
-      "gh api repos/anomalyco/opencode/releases --jq *": "allow"
+      "pnpm list *": "allow",
+      "pnpm lint *": "allow",
+      "pnpm type-check *": "allow",
+      "opencode-whats-new.sh": "allow"
     },
-    "webfetch": "ask"
+    "webfetch": "ask",
+    "websearch": "deny"
   },
   "tools": {
     "tavily_*": false
@@ -45,6 +54,7 @@
       }
     },
     "ask": {
+      "model": "github-copilot/gemini-3.1-pro-preview",
       "mode": "primary",
       "color": "#FF0017",
       "tools": {
@@ -59,20 +69,6 @@
       }
     }
   },
-  "instructions": [
-    "CONTRIBUTING.md",
-    "CONVENTIONS.md",
-    "README.md",
-    "docs/guidelines.md",
-    ".cursor/rules/*.md",
-    ".config/opencode/instructions/*.md"
-  ],
-  "keybinds": {
-    "command_list": "<leader>p",
-    "leader": "ctrl+space",
-    "input_newline": "ctrl+n",
-    "variant_cycle": "<leader>v"
-  },
   "mcp": {
     "context7": {
       "type": "remote",
@@ -82,7 +78,7 @@
     "tavily": {
       "type": "remote",
       "url": "https://mcp.tavily.com/mcp/?tavilyApiKey={env:TAVILY_API_KEY}",
-      "enabled": true
+      "enabled": false
     }
   }
 }

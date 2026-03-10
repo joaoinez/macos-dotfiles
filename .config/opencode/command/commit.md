@@ -1,5 +1,5 @@
 ---
-description: git commit and push
+description: Git commit and push
 model: github-copilot/gemini-3-flash-preview
 subtask: true
 ---

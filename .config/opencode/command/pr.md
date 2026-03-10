@@ -1,6 +1,6 @@
 ---
-description: create a pull request to a target branch
-model: github-copilot/claude-sonnet-4.5
+description: Create a pull request to a target branch
+model: github-copilot/gemini-3-flash-preview
 ---
 
 Create a pull request from the current branch to the target branch.
@@ -77,3 +77,5 @@ Use this command format:
 ```
 gh pr create --base $1 --title "<branch-name>" --body "<body-content>"
 ```
+
+Don't output anything else when you are finished.
