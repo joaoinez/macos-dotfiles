@@ -25,6 +25,7 @@ export PATH=$PATH:$HOME/.local/bin
 export LIQUIBASE_HOME="$HOMEBREW_PREFIX/opt/liquibase/libexec"
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
+export OPENCODE_ENABLE_EXA=1 opencode
 
 # ▀█ █ █▄░█ █ ▀█▀
 # █▄ █ █░▀█ █ ░█░
@@ -100,6 +101,7 @@ alias cat="bat --paging=never"
 # Neovim
 alias vim='~/.local/bin/slivers-nvim.sh'
 alias neovim='nvim --clean'
+alias clean-nvim='rm -rf ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim'
 
 # JetBrains
 alias rider='~/.local/bin/rider.sh'
@@ -136,6 +138,9 @@ alias act="act --container-architecture linux/amd64"
 alias models-copilot="curl https://models.dev/api.json | jq '.[\"github-copilot\"].models[].id'"
 alias models-openrouter="curl https://models.dev/api.json | jq '.[\"openrouter\"].models[].id'"
 alias models-zen="curl https://models.dev/api.json | jq '.[\"opencode\"].models[].id' | grep 'free'"
+
+# love2d
+alias love='find . -name "*.lua" -o -name "*.glsl" | entr -r /Applications/love.app/Contents/MacOS/love .'
 
 # █▀▀ █░█ ▄▀█ █░░
 # ██▄ ▀▄▀ █▀█ █▄▄
