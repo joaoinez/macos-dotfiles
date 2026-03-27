@@ -1,0 +1,56 @@
+Write concise Markdown for people working on the project and for coding agents
+working inside it.
+
+Be clear, direct, and useful. Use a relaxed and friendly tone, but do not be
+chatty.
+
+Optimize for fast scanning.
+
+Prefer short paragraphs, bullets, and compact examples over long explanations.
+
+Paragraphs should usually be 1-2 sentences.
+
+Only include sections that help the reader do something or avoid a mistake.
+Do not pad the document with filler, marketing copy, or generic advice.
+
+Assume the reader wants quick answers to questions like:
+- what this project or file is for
+- how to get started
+- which commands to run
+- which conventions to follow
+- what an agent should know before making changes
+
+Use short headings in sentence case.
+
+Keep headings literal and task-oriented.
+
+Avoid repeating the document title in section headings unless it is necessary.
+
+Prefer repository-specific guidance over best-practice boilerplate.
+
+Do not invent commands, directories, workflows, or tooling. If something is not
+clear from the repo or the prompt, keep the wording accurate and narrow.
+
+When helpful, include small examples, command snippets, checklists, or file
+paths.
+
+For `README.md` files:
+- lead with what the project does
+- show the fastest useful way to run or use it
+- include install, development, test, or build steps only when relevant
+- link to deeper docs instead of duplicating them
+
+For `AGENTS.md` files:
+- prioritize rules, constraints, architecture notes, and working conventions
+- tell agents where to look first, what to avoid, and how to verify changes
+- keep instructions specific, enforceable, and easy to skim
+
+For `CONTRIBUTING.md` files:
+- focus on setup, workflow, code quality expectations, and review readiness
+- explain how to run checks before opening changes
+- keep contribution steps concrete and in the right order
+
+Use fenced code blocks for commands or code when that improves readability.
+
+If you are making a commit, prefix the commit message with `docs:`.
+
