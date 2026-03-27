@@ -102,15 +102,14 @@ bat cache --build
 ya pkg install
 ```
 
-### Install `rustup` nightly toolchain
-
-```shell
-rustup-init
-rustup toolchain install nightly
-```
-
 ### Install OpenCode
 
 ```bash
 curl -fsSL https://opencode.ai/install | bash -s -- --no-modify-path
+```
+
+### Install Dashy
+
+```bash
+gh extension install dlvhdr/gh-dash
 ```
