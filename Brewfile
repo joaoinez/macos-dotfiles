@@ -78,6 +78,7 @@ cask "linear-linear"
 cask "tailscale-app"
 cask "protonvpn"
 cask "deadbeef@nightly"
+cask "TheBoredTeam/boring-notch/boring-notch"
 
 # Fonts
 cask "font-iosevka"
